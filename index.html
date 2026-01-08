@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suncrest Guest House | Home Page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="nav-container">
+        <!-- Logo -->
+        <div class="logo">Suncrest <span>Guesthouse</span></div>
+
+        <!-- Mobile Menu Toggle -->
+        <input type="checkbox" id="menu-toggle" />
+
+        <!-- Hamburger / Close Icon -->
+        <label for="menu-toggle" class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <!-- Navigation -->
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="book-now.html" class="btn-book">Book Now</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <!-- Reservation Numbers (Left) -->
+      <div class="hero-contact">
+        <span class="phone-icon">📞</span>
+        <span>+27 78 000 0000</span>
+        <!-- <span>+27 72 000 0000</span> -->
+      </div>
+
+      <!-- Slider -->
+      <div class="slider">
+        <div
+          class="slide active"
+          style="background-image: url('images/hero1.jpg')"
+        >
+          <div class="hero-content">
+            <h1>Luxury & Comfort</h1>
+            <a href="#" class="hero-btn">Book Now</a>
+          </div>
+        </div>
+
+        <div class="slide" style="background-image: url('images/hero2.jpg')">
+          <div class="hero-content">
+            <h1>Your Perfect Getaway</h1>
+            <a href="#" class="hero-btn">Book Now</a>
+          </div>
+        </div>
+
+        <div class="slide" style="background-image: url('images/hero3.jpg')">
+          <div class="hero-content">
+            <h1>Relax. Refresh. Enjoy.</h1>
+            <a href="#" class="hero-btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination Dots (Right) -->
+      <div class="hero-dots">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+      <div class="about-container">
+        <h2>
+          Welcome to <br />
+          <span>Suncrest Guesthouse</span>
+        </h2>
+
+        <p>
+          Suncrest Guesthouse is a peaceful and welcoming retreat offering
+          comfort, convenience, and warm hospitality in the heart of
+          Bloemfontein. Whether you are traveling for business or leisure, our
+          guesthouse provides a relaxing environment designed to make you feel
+          at home.
+        </p>
+      </div>
+    </section>
+
+    <!-- ROOMS PREVIEW -->
+    <section class="rooms">
+      <div class="rooms-container">
+        <h2 class="section-title">Our Rooms</h2>
+
+        <div class="rooms-grid">
+          <!-- Room 1 -->
+          <div class="room-card">
+            <img src="images/room1.jpg" alt="Luxury Suite" />
+            <div class="room-name">Luxury Suite</div>
+
+            <div class="room-overlay">
+              <h3>Luxury Suite</h3>
+              <a href="book-now.html" class="room-link">
+                View Details <span>→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Room 2 -->
+          <div class="room-card">
+            <img src="images/room2.jpg" alt="Executive Room" />
+            <div class="room-name">Executive Room</div>
+
+            <div class="room-overlay">
+              <h3>Executive Room</h3>
+              <a href="book-now.html" class="room-link">
+                View Details <span>→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Room 3 -->
+          <div class="room-card">
+            <img src="images/room3.jpg" alt="Standard Room" />
+            <div class="room-name">Standard Room</div>
+
+            <div class="room-overlay">
+              <h3>Standard Room</h3>
+              <a href="book-now.html" class="room-link">
+                View Details <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AMENITIES / FACILITIES -->
+    <section class="amenities">
+      <div class="amenities-container">
+        <h2 class="section-title">Our Facilities</h2>
+
+        <div class="amenities-grid">
+          <!-- Kitchen -->
+          <div class="amenity-card">
+            <div class="amenity-image">
+              <img src="images/kitchen.jpg" alt="Kitchen" />
+            </div>
+
+            <div class="amenity-content">
+              <h3>Fully Equipped Kitchen</h3>
+              <p>
+                Enjoy access to a modern, fully equipped kitchen designed for
+                comfort and convenience during your stay.
+              </p>
+            </div>
+          </div>
+
+          <!-- Fitness Center -->
+          <div class="amenity-card">
+            <div class="amenity-image">
+              <img src="images/gym.jpg" alt="Fitness Center" />
+            </div>
+
+            <div class="amenity-content">
+              <h3>Fitness Center</h3>
+              <p>
+                Stay active in our well-equipped fitness center, perfect for
+                maintaining your workout routine while away from home.
+              </p>
+            </div>
+          </div>
+
+          <!-- Pool Area -->
+          <div class="amenity-card">
+            <div class="amenity-image">
+              <img src="images/pool.jpg" alt="Pool Area" />
+            </div>
+
+            <div class="amenity-content">
+              <h3>Pool Area</h3>
+              <p>
+                Relax and unwind in our serene pool area, ideal for cooling off
+                and enjoying peaceful moments outdoors.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BOOKING SECTION -->
+    <section class="cta-booking">
+      <div class="cta-overlay">
+        <div class="cta-content">
+          <h2>Book Your Stay Today</h2>
+          <p>
+            Experience comfort, luxury, and warm hospitality at Suncrest
+            Guesthouse. Reserve your room now and enjoy a relaxing stay in
+            Bloemfontein.
+          </p>
+          <a href="book-now.html" class="cta-btn">Book Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- About -->
+        <div class="footer-box">
+          <h3 class="footer-logo">Suncrest <span>Guesthouse</span></h3>
+          <p>
+            Suncrest Guesthouse offers comfort, relaxation, and warm hospitality
+            in a peaceful environment. Perfect for business travelers and
+            families seeking a home away from home.
+          </p>
+        </div>
+
+        <!-- Facilities -->
+        <div class="footer-box">
+          <h4>Facilities</h4>
+          <ul>
+            <li>🏊 Pool Area</li>
+            <li>🏋️ Gym</li>
+            <li>🍳 Fully Equipped Kitchen</li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-box">
+          <h4>Contact Us</h4>
+          <p>📍 Bloemfontein, Free State</p>
+          <p>📞 +27 78 000 0000</p>
+          <p>✉️ info@suncrestguesthouse.co.za</p>
+
+          <div class="social-icons">
+            <a href="#">🌐</a>
+            <a href="#">📘</a>
+            <a href="#">📸</a>
+            <a href="#">🐦</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="footer-bottom">
+        <p>
+          © 2026 Suncrest Guesthouse. All Rights Reserved | Developed by
+          <strong>Lebogang Sekaleli</strong>
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
