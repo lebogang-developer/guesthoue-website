@@ -240,8 +240,12 @@ body {
 /* HERO CONTENT */
 .hero-content {
   position: absolute;
-  bottom: 20%;
-  left: 10%;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   color: #fff;
   z-index: 2;
 }
