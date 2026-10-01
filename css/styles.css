@@ -1263,7 +1263,6 @@ body {
 .room-quick-info > div {
   display: flex;
   align-items: center;
-
   gap: 10px;
 }
 
@@ -1273,9 +1272,7 @@ body {
 
 .room-quick-info p {
   margin: 0;
-
   color: #777;
-
   font-size: 0.78rem;
   line-height: 1.5;
 }
@@ -1678,6 +1675,624 @@ body {
     min-height: 500px;
 
     background-attachment: scroll;
+  }
+}
+
+/* =====================================================
+   FACILITIES PAGE
+===================================================== */
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.facilities-hero {
+  position: relative;
+  min-height: 65vh;
+  background-image: url("../images/facilities-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.facilities-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.58);
+}
+
+.facilities-hero-content {
+  width: 100%;
+  max-width: 800px;
+
+  padding: 40px 20px;
+
+  color: #fff;
+
+  text-align: center;
+}
+
+.facilities-hero-content > span {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #ffb347;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.facilities-hero-content h1 {
+  margin-bottom: 20px;
+
+  font-size: clamp(2.8rem, 6vw, 5.2rem);
+  line-height: 1.05;
+}
+
+.facilities-hero-content p {
+  max-width: 620px;
+
+  margin: 0 auto 30px;
+
+  color: #eee;
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.facilities-hero-btn {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 14px 30px;
+
+  border: 1px solid #fff;
+  border-radius: 30px;
+
+  color: #fff;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.facilities-hero-btn:hover {
+  background: #ff7a18;
+
+  border-color: #ff7a18;
+
+  transform: translateY(-3px);
+}
+
+/* =====================================================
+   INTRODUCTION
+===================================================== */
+
+.facilities-intro {
+  padding: 100px 20px;
+
+  background: #fff;
+}
+
+.facilities-intro-container {
+  max-width: 800px;
+
+  margin: auto;
+
+  text-align: center;
+}
+
+.facilities-label {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #ff7a18;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.facilities-intro h2,
+.additional-heading h2 {
+  margin-bottom: 20px;
+
+  color: #222;
+
+  font-size: clamp(2rem, 4vw, 2.8rem);
+}
+
+.facilities-intro p {
+  color: #666;
+
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+/* =====================================================
+   FACILITY ROWS
+===================================================== */
+
+.facilities-list {
+  background: #f7f7f7;
+}
+
+.facility-row {
+  max-width: 1400px;
+
+  min-height: 600px;
+
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  background: #fff;
+}
+
+.facility-row + .facility-row {
+  margin-top: 60px;
+}
+
+/* REVERSE */
+
+.facility-row-reverse .facility-image {
+  order: 2;
+}
+
+.facility-row-reverse .facility-content {
+  order: 1;
+}
+
+/* =====================================================
+   FACILITY IMAGE
+===================================================== */
+
+.facility-image {
+  position: relative;
+
+  min-height: 580px;
+
+  overflow: hidden;
+}
+
+.facility-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.8s ease;
+}
+
+.facility-row:hover .facility-image img {
+  transform: scale(1.05);
+}
+
+/* FACILITY NUMBER */
+
+.facility-number {
+  position: absolute;
+
+  left: 25px;
+  bottom: 20px;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  font-size: 4rem;
+  font-weight: 700;
+
+  line-height: 1;
+
+  text-shadow: 0 3px 15px rgba(0, 0, 0, 0.35);
+}
+
+/* =====================================================
+   FACILITY CONTENT
+===================================================== */
+
+.facility-content {
+  padding: 70px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.facility-category {
+  margin-bottom: 12px;
+
+  color: #ff7a18;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.facility-content h2 {
+  margin-bottom: 22px;
+
+  color: #222;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.facility-content > p {
+  max-width: 580px;
+
+  margin-bottom: 28px;
+
+  color: #666;
+
+  line-height: 1.9;
+}
+
+/* =====================================================
+   FACILITY FEATURES
+===================================================== */
+
+.facility-features {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 13px 25px;
+
+  padding: 25px 0 0;
+
+  border-top: 1px solid #eee;
+
+  list-style: none;
+}
+
+.facility-features li {
+  position: relative;
+
+  padding-left: 22px;
+
+  color: #555;
+
+  font-size: 0.9rem;
+}
+
+.facility-features li::before {
+  content: "✓";
+
+  position: absolute;
+
+  left: 0;
+
+  color: #ff7a18;
+
+  font-weight: 700;
+}
+
+/* =====================================================
+   ADDITIONAL AMENITIES
+===================================================== */
+
+.additional-amenities {
+  padding: 110px 20px;
+
+  background: #fff;
+}
+
+.additional-amenities-container {
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+.additional-heading {
+  max-width: 650px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.additional-heading p {
+  color: #666;
+
+  line-height: 1.7;
+}
+
+.amenities-icon-grid {
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr);
+
+  gap: 20px;
+}
+
+.amenities-icon-item {
+  padding: 35px 15px;
+
+  border: 1px solid #eee;
+
+  text-align: center;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.amenities-icon-item span {
+  display: block;
+
+  margin-bottom: 15px;
+
+  font-size: 2rem;
+}
+
+.amenities-icon-item h3 {
+  color: #333;
+
+  font-size: 0.95rem;
+}
+
+.amenities-icon-item:hover {
+  transform: translateY(-8px);
+
+  border-color: transparent;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* =====================================================
+   BOOKING CTA
+===================================================== */
+
+.facilities-cta {
+  position: relative;
+
+  min-height: 520px;
+
+  background-image: url("../images/facility-cta.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.facilities-cta-overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.62);
+}
+
+.facilities-cta-content {
+  width: 100%;
+  max-width: 750px;
+
+  padding: 40px 20px;
+
+  color: #fff;
+
+  text-align: center;
+}
+
+.facilities-cta-content > span {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #ffb347;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.facilities-cta-content h2 {
+  margin-bottom: 20px;
+
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+}
+
+.facilities-cta-content p {
+  max-width: 620px;
+
+  margin: 0 auto 30px;
+
+  color: #eee;
+
+  line-height: 1.8;
+}
+
+/* CTA BUTTONS */
+
+.facilities-cta-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.facilities-primary-btn,
+.facilities-secondary-btn {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 14px 28px;
+
+  border-radius: 30px;
+
+  color: #fff;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.facilities-primary-btn {
+  background: #ff7a18;
+
+  border: 2px solid #ff7a18;
+}
+
+.facilities-primary-btn:hover {
+  background: #ff8f3f;
+
+  transform: translateY(-3px);
+}
+
+.facilities-primary-btn span {
+  transition: transform 0.3s ease;
+}
+
+.facilities-primary-btn:hover span {
+  transform: translateX(5px);
+}
+
+.facilities-secondary-btn {
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.facilities-secondary-btn:hover {
+  background: #fff;
+
+  color: #222;
+
+  transform: translateY(-3px);
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+  .facility-row {
+    grid-template-columns: 1fr;
+  }
+
+  .facility-row-reverse .facility-image,
+  .facility-row-reverse .facility-content {
+    order: initial;
+  }
+
+  .facility-image {
+    min-height: 480px;
+  }
+
+  .facility-content {
+    padding: 50px 40px;
+  }
+
+  .amenities-icon-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+  /* HERO */
+
+  .facilities-hero {
+    min-height: 70vh;
+  }
+
+  .facilities-hero-content p {
+    font-size: 0.95rem;
+  }
+
+  /* INTRO */
+
+  .facilities-intro {
+    padding: 70px 20px;
+  }
+
+  /* FACILITY SECTIONS */
+
+  .facility-row + .facility-row {
+    margin-top: 35px;
+  }
+
+  .facility-image {
+    min-height: 350px;
+  }
+
+  .facility-content {
+    padding: 40px 20px;
+  }
+
+  .facility-number {
+    left: 15px;
+    bottom: 15px;
+
+    font-size: 3rem;
+  }
+
+  .facility-features {
+    grid-template-columns: 1fr;
+  }
+
+  /* ADDITIONAL AMENITIES */
+
+  .additional-amenities {
+    padding: 75px 20px;
+  }
+
+  .amenities-icon-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+  }
+
+  .amenities-icon-item {
+    padding: 25px 10px;
+  }
+
+  /* CTA */
+
+  .facilities-cta {
+    min-height: 550px;
+
+    background-attachment: scroll;
+  }
+
+  .facilities-cta-actions {
+    flex-direction: column;
+  }
+
+  .facilities-primary-btn,
+  .facilities-secondary-btn {
+    justify-content: center;
+
+    width: 100%;
+    max-width: 280px;
   }
 }
 
