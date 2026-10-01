@@ -1,13 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Suncrest Guest | Gallery</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-     <!-- HEADER -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
     <header class="header">
       <div class="nav-container">
         <!-- Logo -->
@@ -26,7 +34,7 @@
         <!-- Navigation -->
         <nav class="nav">
           <ul class="nav-links">
-          <a href="index.html">Home</a>
+            <a href="index.html">Home</a>
             <li><a href="rooms.html">Rooms</a></li>
             <li><a href="facilities.html">Facilities</a></li>
             <li><a href="gallery.html">Gallery</a></li>
@@ -37,10 +45,523 @@
       </div>
     </header>
 
-    <!-- Dummy content to test sticky behavior -->
-    <main style="height: 200vh; padding-top: 120px">
-      <h1 style="text-align: center">Scroll to see sticky header</h1>
-    </main>
-    
-</body>
+    <!-- =========================================
+     GALLERY HERO
+========================================= -->
+    <section class="gallery-page-hero">
+      <div class="gallery-page-hero-overlay">
+        <div class="gallery-page-hero-content">
+          <span>Discover Suncrest</span>
+
+          <h1>Our Gallery</h1>
+
+          <p>
+            Explore the rooms, facilities and relaxing spaces that make Suncrest
+            Guesthouse a comfortable place to stay.
+          </p>
+
+          <a href="#gallery" class="gallery-hero-btn">
+            Explore Gallery
+            <span>&darr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+     GALLERY INTRODUCTION
+========================================= -->
+    <section class="gallery-page-intro">
+      <div class="gallery-page-intro-container">
+        <span class="gallery-page-label"> A Glimpse of Suncrest </span>
+
+        <h2>Experience Your Stay Before You Arrive</h2>
+
+        <p>
+          From comfortable rooms and welcoming shared spaces to our pool and
+          outdoor areas, take a closer look at what awaits you during your stay
+          at Suncrest Guesthouse.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================
+     MAIN GALLERY
+========================================= -->
+    <section class="main-gallery" id="gallery">
+      <div class="main-gallery-container">
+        <!-- =====================================
+         FILTER BUTTONS
+    ====================================== -->
+        <div class="gallery-filters">
+          <button class="gallery-filter active" data-filter="all" type="button">
+            All
+          </button>
+
+          <button class="gallery-filter" data-filter="rooms" type="button">
+            Rooms
+          </button>
+
+          <button class="gallery-filter" data-filter="facilities" type="button">
+            Facilities
+          </button>
+
+          <button class="gallery-filter" data-filter="pool" type="button">
+            Pool
+          </button>
+
+          <button class="gallery-filter" data-filter="outdoor" type="button">
+            Outdoor
+          </button>
+        </div>
+
+        <!-- =====================================
+         GALLERY GRID
+    ====================================== -->
+        <div class="gallery-masonry">
+          <!-- IMAGE 1 -->
+          <div class="gallery-page-item gallery-tall" data-category="rooms">
+            <img src="images/gallery/room1.jpg" alt="Luxury Suite" />
+
+            <div class="gallery-page-overlay">
+              <div>
+                <span>Rooms</span>
+                <h3>Luxury Suite</h3>
+              </div>
+
+              <button
+                class="gallery-open"
+                type="button"
+                aria-label="View Luxury Suite image"
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          <!-- IMAGE 2 -->
+          <div class="gallery-page-item" data-category="pool">
+            <img src="images/gallery/pool1.jpg" alt="Swimming Pool" />
+
+            <div class="gallery-page-overlay">
+              <div>
+                <span>Pool</span>
+                <h3>Pool Area</h3>
+              </div>
+
+              <button
+                class="gallery-open"
+                type="button"
+                aria-label="View pool area"
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          <!-- IMAGE 3 -->
+          <div class="gallery-page-item" data-category="facilities">
+            <img src="images/gallery/kitchen1.jpg" alt="Guest Kitchen" />
+
+            <div class="gallery-page-overlay">
+              <div>
+                <span>Facilities</span>
+                <h3>Guest Kitchen</h3>
+              </div>
+
+              <button
+                class="gallery-open"
+                type="button"
+                aria-label="View guest kitchen"
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          <!-- IMAGE 4 -->
+          <div class="gallery-page-item gallery-wide" data-category="outdoor">
+            <img
+              src="images/gallery/outdoor1.jpg"
+              alt="Suncrest outdoor relaxation area"
+            />
+
+            <div class="gallery-page-overlay">
+              <div>
+                <span>Outdoor</span>
+                <h3>Relaxation Area</h3>
+              </div>
+
+              <button
+                class="gallery-open"
+                type="button"
+                aria-label="View outdoor relaxation area"
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          <!-- IMAGE 5 -->
+          <div class="gallery-page-item" data-category="rooms">
+            <img src="images/gallery/room2.jpg" alt="Executive Room" />
+
+            <div class="gallery-page-overlay">
+              <div>
+                <span>Rooms</span>
+                <h3>Executive Room</h3>
+              </div>
+
+              <button
+                class="gallery-open"
+                type="button"
+                aria-label="View Executive Room"
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          <!-- IMAGE 6 -->
+          <div
+            class="gallery-page-item gallery-tall"
+            data-category="facilities"
+          >
+            <img src="images/gallery/gym1.jpg" alt="Fitness Centre" />
+
+            <div class="gallery-page-overlay">
+              <div>
+                <span>Facilities</span>
+                <h3>Fitness Centre</h3>
+              </div>
+
+              <button
+                class="gallery-open"
+                type="button"
+                aria-label="View Fitness Centre"
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          <!-- IMAGE 7 -->
+          <div class="gallery-page-item" data-category="rooms">
+            <img src="images/gallery/room3.jpg" alt="Standard Room" />
+
+            <div class="gallery-page-overlay">
+              <div>
+                <span>Rooms</span>
+                <h3>Standard Room</h3>
+              </div>
+
+              <button
+                class="gallery-open"
+                type="button"
+                aria-label="View Standard Room"
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          <!-- IMAGE 8 -->
+          <div class="gallery-page-item" data-category="pool">
+            <img src="images/gallery/pool2.jpg" alt="Suncrest swimming pool" />
+
+            <div class="gallery-page-overlay">
+              <div>
+                <span>Pool</span>
+                <h3>Relax by the Pool</h3>
+              </div>
+
+              <button
+                class="gallery-open"
+                type="button"
+                aria-label="View swimming pool"
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          <!-- IMAGE 9 -->
+          <div
+            class="gallery-page-item gallery-wide"
+            data-category="facilities"
+          >
+            <img src="images/gallery/lounge1.jpg" alt="Guest Lounge" />
+
+            <div class="gallery-page-overlay">
+              <div>
+                <span>Facilities</span>
+                <h3>Guest Lounge</h3>
+              </div>
+
+              <button
+                class="gallery-open"
+                type="button"
+                aria-label="View Guest Lounge"
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          <!-- IMAGE 10 -->
+          <div class="gallery-page-item" data-category="outdoor">
+            <img src="images/gallery/outdoor2.jpg" alt="Guesthouse garden" />
+
+            <div class="gallery-page-overlay">
+              <div>
+                <span>Outdoor</span>
+                <h3>Garden Area</h3>
+              </div>
+
+              <button
+                class="gallery-open"
+                type="button"
+                aria-label="View garden area"
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          <!-- IMAGE 11 -->
+          <div class="gallery-page-item" data-category="rooms">
+            <img src="images/gallery/room4.jpg" alt="Luxury room bathroom" />
+
+            <div class="gallery-page-overlay">
+              <div>
+                <span>Rooms</span>
+                <h3>En-Suite Bathroom</h3>
+              </div>
+
+              <button
+                class="gallery-open"
+                type="button"
+                aria-label="View en-suite bathroom"
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          <!-- IMAGE 12 -->
+          <div
+            class="gallery-page-item gallery-tall"
+            data-category="facilities"
+          >
+            <img
+              src="images/gallery/dining1.jpg"
+              alt="Breakfast and dining area"
+            />
+
+            <div class="gallery-page-overlay">
+              <div>
+                <span>Facilities</span>
+                <h3>Breakfast & Dining</h3>
+              </div>
+
+              <button
+                class="gallery-open"
+                type="button"
+                aria-label="View breakfast and dining area"
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          <!-- IMAGE 13 -->
+          <div class="gallery-page-item" data-category="outdoor">
+            <img src="images/gallery/outdoor3.jpg" alt="Outdoor seating area" />
+
+            <div class="gallery-page-overlay">
+              <div>
+                <span>Outdoor</span>
+                <h3>Outdoor Seating</h3>
+              </div>
+
+              <button
+                class="gallery-open"
+                type="button"
+                aria-label="View outdoor seating"
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          <!-- IMAGE 14 -->
+          <div class="gallery-page-item" data-category="pool">
+            <img src="images/gallery/pool3.jpg" alt="Poolside seating" />
+
+            <div class="gallery-page-overlay">
+              <div>
+                <span>Pool</span>
+                <h3>Poolside Comfort</h3>
+              </div>
+
+              <button
+                class="gallery-open"
+                type="button"
+                aria-label="View poolside area"
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          <!-- IMAGE 15 -->
+          <div class="gallery-page-item gallery-wide" data-category="outdoor">
+            <img
+              src="images/gallery/exterior1.jpg"
+              alt="Suncrest Guesthouse exterior"
+            />
+
+            <div class="gallery-page-overlay">
+              <div>
+                <span>Outdoor</span>
+                <h3>Suncrest Guesthouse</h3>
+              </div>
+
+              <button
+                class="gallery-open"
+                type="button"
+                aria-label="View Suncrest Guesthouse exterior"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+     LIGHTBOX
+========================================= -->
+    <div
+      class="gallery-lightbox"
+      id="galleryLightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Gallery image viewer"
+    >
+      <!-- Close -->
+      <button class="lightbox-close" type="button" aria-label="Close gallery">
+        &times;
+      </button>
+
+      <!-- Previous -->
+      <button
+        class="lightbox-nav lightbox-prev"
+        type="button"
+        aria-label="Previous image"
+      >
+        &#10094;
+      </button>
+
+      <!-- Image -->
+      <div class="lightbox-content">
+        <img src="" alt="" id="lightboxImage" />
+
+        <div class="lightbox-caption">
+          <span id="lightboxCategory"></span>
+
+          <h3 id="lightboxTitle"></h3>
+        </div>
+      </div>
+
+      <!-- Next -->
+      <button
+        class="lightbox-nav lightbox-next"
+        type="button"
+        aria-label="Next image"
+      >
+        &#10095;
+      </button>
+    </div>
+
+    <!-- =========================================
+     GALLERY CTA
+========================================= -->
+    <section class="gallery-page-cta">
+      <div class="gallery-page-cta-overlay">
+        <div class="gallery-page-cta-content">
+          <span>Like What You See?</span>
+
+          <h2>Come Experience It for Yourself</h2>
+
+          <p>
+            Comfortable rooms, relaxing spaces and warm hospitality are waiting
+            for you at Suncrest Guesthouse.
+          </p>
+
+          <div class="gallery-page-cta-actions">
+            <a href="book-now.html" class="gallery-page-primary-btn">
+              Book Your Stay
+              <span>&rarr;</span>
+            </a>
+
+            <a href="rooms.html" class="gallery-page-secondary-btn">
+              Explore Rooms
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- About -->
+        <div class="footer-box">
+          <h3 class="footer-logo">Suncrest <span>Guesthouse</span></h3>
+          <p>
+            Suncrest Guesthouse offers comfort, relaxation, and warm hospitality
+            in a peaceful environment. Perfect for business travelers and
+            families seeking a home away from home.
+          </p>
+        </div>
+
+        <!-- Facilities -->
+        <div class="footer-box">
+          <h4>Facilities</h4>
+          <ul>
+            <li>🏊 Pool Area</li>
+            <li>🏋️ Gym</li>
+            <li>🍳 Fully Equipped Kitchen</li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-box">
+          <h4>Contact Us</h4>
+          <p>📍 Bloemfontein, Free State</p>
+          <p>📞 +27 78 000 0000</p>
+          <p>✉️ info@suncrestguesthouse.co.za</p>
+
+          <div class="social-icons">
+            <a href="#">🌐</a>
+            <a href="#">📘</a>
+            <a href="#">📸</a>
+            <a href="#">🐦</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="footer-bottom">
+        <p>
+          © 2026 Suncrest Guesthouse. All Rights Reserved | Developed by
+          <strong>Lebogang Sekaleli</strong>
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
 </html>
